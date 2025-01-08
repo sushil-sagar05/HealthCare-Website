@@ -1,7 +1,7 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Home from './Pages/Home'
-import Medicine from './Pages/medicine'
+import Medicine from './Pages/Medicine'
 import Error from './Pages/Error'
 import Facilites from './Pages/Facilites'
 import Header from './Components/Header'
