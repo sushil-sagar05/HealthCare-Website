@@ -2,7 +2,6 @@
 
 This project is a healthcare website built using React, Redux, and Tailwind CSS. It provides various functionalities such as patient registration, viewing lab reports, booking OPD tickets, and more.
 
-## Project Structure
 
 ## Getting Started
 
