@@ -15,7 +15,7 @@ function Header() {
             </Link>
           </div>
         </div>
-        <div className="rightNav  w-[45vw]  cursor-pointer">
+        <div className="rightNav   w-[35vw]  cursor-pointer">
            <div className='items'> <ul className='flex justify-evenly font-bold my-5' >
            <li>
                 <NavLink
@@ -42,12 +42,7 @@ function Header() {
                   className={({isActive}) => `${isActive ? "text-orange-700" : "text-black"}  border-orange-700 hover:text-orange-700`} > FAQs
                 </NavLink>
                </li> 
-               <li>
-                <NavLink
-                  to="/Register"
-                  className={({isActive}) => `${isActive ? "text-orange-700" : "text-black"}  border-orange-700 hover:text-orange-700`} > Login/Register
-                </NavLink>
-               </li>
+              
             </ul></div>
         </div>
         </nav>
