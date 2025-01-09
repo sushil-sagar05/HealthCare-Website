@@ -3,7 +3,7 @@ import Header from '../Components/Header'
 import Report from '../Components/Report'
 import BloodReport from '../Components/BloodReport'
 import { IoMdCloseCircleOutline } from "react-icons/io";
-
+import Footer from '../Components/Footer';
 function LabTest() {
   const [active, setActive] = useState(window.innerWidth > 768);
 
@@ -77,6 +77,7 @@ function LabTest() {
         </div>
         <Report/>
       </div>
+      <Footer/>
     </>
   )
 }

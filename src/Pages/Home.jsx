@@ -5,7 +5,7 @@ import Footer from '../Components/Footer'
 
 function Home() {
   return (
-    <div className="container mx-auto px-4 md:px-0">
+    <div className="container h-full w-full mx-auto px-4 md:px-0">
       <Header/>
       <Hero/>
       <Footer/>

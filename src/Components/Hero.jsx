@@ -38,7 +38,8 @@ function Hero() {
             <p className='text-left'>Welcome to CareSync, where we are committed to revolutionizing healthcare through an integrated platform that brings all hospital services together. Our mission is to enhance patient care and streamline operations for healthcare providers, ensuring a seamless experience from registration to treatment. With innovative solutions in electronic medical records, scheduling, billing, and telemedicine, we prioritize efficiency and compassion in every interaction. Join us as we pave the way toward a more connected and patient-centric healthcare system</p>
             </div>
             <div>
-            <div className="button h-16 w-1/2 mt-5 md:mt-52 rounded-3xl pt-4"><Link to='/AboutUs'><button className='bg-pink-400 h-full w-full rounded-3xl text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black'>Read More</button></Link></div>
+            <div className="button h-16 w-1/2 mb-5 md:mt-52 rounded-3xl pt-4"><Link to='/AboutUs'>                        <button type='submit' className='bg-pink-400 mt-5 h-[32px] w-full md:w-[18vw] text-white hover:bg-white hover:text-black font-bold rounded-3xl hover:border hover:border-solid hover:border-black'>Send</button>
+            </Link></div>
             </div>
             </div>
            

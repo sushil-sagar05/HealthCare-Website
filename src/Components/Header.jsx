@@ -6,10 +6,10 @@ function Header() {
     <>
     <header className='h-[10vh]  '>
         <nav className='w-full fixed z-50 p-0 bg-white flex md:justify-between  h-[10vh]'>
-        <div className="leftNav h-32  md:h-[15vh] md:w-[15vw] w-1/3 ">
+        <div className="leftNav h-36  md:h-[15vh] md:w-[15vw] w-1/6 ">
           <div className="image  h-full  object-cover  ">
            <Link to="/"> <img 
-            className="image  h-1/2 w-full  pl-3 mt-1"
+            className="image  h-1/2 w-full  pl-3 "
             src="./images/logo.png" alt="" />
             </Link>
           </div>

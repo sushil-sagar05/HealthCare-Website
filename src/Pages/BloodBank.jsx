@@ -3,7 +3,7 @@ import Header from '../Components/Header'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css'
-
+import Footer from '../Components/Footer.jsx'
 function BloodBank() {
     const settings = {
         dots: true,
@@ -170,10 +170,12 @@ function BloodBank() {
                     </div>
                 </div> 
             </div>
+           
             </>
         ))
     }
    </div>
+   <Footer/>
    </>
   )
 }
