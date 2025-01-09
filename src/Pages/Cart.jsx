@@ -3,9 +3,9 @@ import Header from '../Components/Header'
 
 function Cart() {
   return (
-   <>
-   <Header/>
-   </>
+    <>
+      <Header/>
+    </>
   )
 }
 

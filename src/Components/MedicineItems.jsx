@@ -5,7 +5,7 @@ import MedicineCard from './MedicineCard'
 function MedicineItems() {
   return (
  <>
- <div className="cardcontainer flex flex-wrap justify-center w-[100vw] gap-4">
+ <div className="cardcontainer flex flex-wrap justify-center w-full gap-4">
 {MedicineData.map((Medicine) => (
     <MedicineCard
     key={Medicine.id}

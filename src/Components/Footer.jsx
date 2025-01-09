@@ -3,9 +3,9 @@ import React from 'react'
 function Footer() {
   return (
     <>
-   <footer className='flex justify-end'>
+   <footer className='flex justify-center md:justify-end'>
    <hr />
-   <h1>© Copyright All Rigths Reserved</h1>
+   <h1 className='text-center md:text-right'>© Copyright All Rights Reserved</h1>
    </footer>
     </>
   )

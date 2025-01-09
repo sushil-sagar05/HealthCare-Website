@@ -5,8 +5,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css'
 import { TbMessageChatbotFilled } from "react-icons/tb";
 
-
-
 function SliderFacilities() {
     const settings = {
         dots: true,
@@ -16,28 +14,44 @@ function SliderFacilities() {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     };
   return (
     <div className=''>
-        <div className='h-[55vh] v-[65vw]'>
+        <div className='h-[55vh] w-full'>
        <Slider {...settings}>
         {
             data.map((d)=> (
                 <>
-                <div className='bg-[#f8f7f5]  w-[] rounded-xl mx-5 my-4'>
-                <div className="card w-[25vw] m-auto h-[50vh]  ">
-                    <div className="img h-[25vh] w-[25vw] pr-10 flex justify-center items-center">
-                        <img className='h-[25vh] w-[25vw] ' src={d.img} alt="" />
+                <div className='bg-[#f8f7f5] rounded-xl mx-5 my-4'>
+                <div className="card w-full m-auto h-[50vh]">
+                    <div className="img h-[25vh] w-full flex justify-center items-center">
+                        <img className='h-full w-full object-cover' src={d.img} alt="" />
                     </div>
-                    <div className="other my-4">
+                    <div className="other my-4 px-4">
                         <div className="name">
                             <h2 className='font-bold'>{d.name}</h2>
                         </div>
                         <div className="desc">
                           <p>{d.desc}</p>  
                         </div>
-                      <Link to={d.route}><button className='cursor-pointer bg-pink-400   h-[42px] w-32 rounded-3xl  text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black'>Register</button></Link>  
+                      <Link to={d.route}><button className='cursor-pointer bg-pink-400 h-[42px] w-32 rounded-3xl text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black'>Register</button></Link>  
                     </div>
                 </div>
                 </div>
@@ -45,20 +59,14 @@ function SliderFacilities() {
             ))
         }
         </Slider>
-       
         </div>
-      
-  
-       
-        <div className="button flex"><Link to="/Facilites"><button className='bg-pink-400 h-[42px] w-32 font-bold mb-7 ml-[75vw] rounded-3xl cursor-pointer  text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black'>viewAll</button>
+        <div className="button flex justify-end pr-4"><Link to="/Facilites"><button className='bg-pink-400 h-[42px] w-32 font-bold mb-7 rounded-3xl cursor-pointer text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black'>viewAll</button>
         </Link>
-     
-
         </div>
-      
     </div>
   )
 }
+
 const data = [
     {
         name: "Patient Registration" ,
@@ -90,7 +98,6 @@ const data = [
         img:'./images/inventory.jpg',
         route: "/inventory",
     },
-    
-
 ]
+
 export default SliderFacilities

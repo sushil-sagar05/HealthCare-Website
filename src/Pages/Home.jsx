@@ -5,12 +5,11 @@ import Footer from '../Components/Footer'
 
 function Home() {
   return (
-   <>
-
-   <Header/>
-   <Hero/>
-  
-   </> 
+    <div className="container mx-auto px-4 md:px-0">
+      <Header/>
+      <Hero/>
+      <Footer/>
+    </div>
   )
 }
 

@@ -5,11 +5,11 @@ function MedicineCard({id,name,img,price}) {
   const dispatch = useDispatch()
   return (
     <>
-     <div className="Card h-[35vh] w-[20vw]  bg-[#f8f7f5] mt-4 ml-5 rounded-md shadow-md">
-        <div className="image h-[20vh] w-[20vw] ">
-          <img className='h-[20vh] w-[20vw] pl-5 pt-3' src={img} alt="" />
+     <div className="Card h-[35vh] w-full md:w-[20vw] bg-[#f8f7f5] mt-4 ml-5 rounded-md shadow-md">
+        <div className="image h-[20vh] w-full md:w-[20vw]">
+          <img className='h-[20vh] w-full md:w-[20vw] pl-5 pt-3' src={img} alt="" />
         </div>
-        <div className="name h-[5vh] w-[20vw] font-bold mr-40 mt-3"> {name}</div>
+        <div className="name h-[5vh] w-full md:w-[20vw] font-bold mr-40 mt-3"> {name}</div>
         <div className="content flex justify-evenly gap-24">
           <div className="price">₹{price}</div>
           <div className="button">

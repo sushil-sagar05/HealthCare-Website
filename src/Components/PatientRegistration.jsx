@@ -3,11 +3,11 @@ import React from 'react'
 function PatientRegistration() {
   return (
     <>
-   <h2 className='font-extrabold text-2xl mt-3 mb-4'>Registration Form</h2>
-    <div className="registration flex justify-evenly">
+   <h2 className='font-extrabold text-2xl mt-3 mb-4 text-center md:text-left'>Registration Form</h2>
+    <div className="registration flex flex-col md:flex-row justify-evenly">
         
         <div className="inputs ml-5 flex justify-center">
-        <form className="p-6 flex flex-col justify-center ">
+        <form className="p-6 flex flex-col justify-center w-full md:w-auto">
                             <div className="flex flex-col">
                                 <label for="name" className="hidden">
                                     Full Name
@@ -17,7 +17,7 @@ function PatientRegistration() {
                                     name="name"
                                     id="name"
                                     placeholder="Full Name"
-                                    className="w-[25vw] mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-full md:w-[25vw] mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
 
@@ -30,7 +30,7 @@ function PatientRegistration() {
                                     name="email"
                                     id="email"
                                     placeholder="Email"
-                                    className="w-[25vw]  mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-full md:w-[25vw]  mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
 
@@ -43,7 +43,7 @@ function PatientRegistration() {
                                     name="tel"
                                     id="tel"
                                     placeholder="Telephone Number"
-                                    className="w-[25vw]  mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-full md:w-[25vw]  mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
                             <div className="flex flex-col mt-2">
@@ -55,7 +55,7 @@ function PatientRegistration() {
                                     name="Num"
                                     id="aadhar"
                                     placeholder="Aadhar Number"
-                                    className="w-[25vw]  mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-full md:w-[25vw]  mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
                             <div className="flex flex-col mt-2">
@@ -67,7 +67,7 @@ function PatientRegistration() {
                                     name="Address"
                                     id="Address"
                                     placeholder="Address"
-                                    className="w-[25vw]  mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-full md:w-[25vw]  mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
                             <div className="flex flex-col mt-2">
@@ -79,12 +79,12 @@ function PatientRegistration() {
                                     name="Age"
                                     id="Age"
                                     placeholder="Age"
-                                    className="w-[12.5vw]  mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+                                    className="w-full md:w-[12.5vw] mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
                             <button
                                 type="submit"
-                                className="md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
+                                className="w-full md:w-32 bg-orange-700 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-orange-600 transition ease-in-out duration-300"
                             >
                                 Submit
                             </button>
