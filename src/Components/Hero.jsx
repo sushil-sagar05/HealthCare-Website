@@ -11,7 +11,7 @@ function Hero() {
     <div className="hero h-auto md:h-[100vh]">
     <div className="BottomNav h-[12vh] w-full  md:w-[100vw] md:flex  gap-10  ">
     <div className='w-full mb-2'>
-    <h2 className='text-md md:text-5xl font-bold text-black text-center'>Why to wait and stand in long line. Book your Opd tickets from here!!</h2>
+    <h2 className='text-md md:text-4xl font-bold text-black text-center'>Why to wait and stand in long line. Book your Opd tickets from here!!</h2>
       </div> 
       <div className='w-1/2  ml-20 '>
       <Link to='/PatientRegistration'>
