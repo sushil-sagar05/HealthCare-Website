@@ -31,8 +31,8 @@ function CartCompo() {
 <h3>Total Amount: ₹{totalPrice}</h3>
 </div>
 <hr />
-   <div className="buttons fixed bottom-5 w-full md:w-[18vw] h-[4vh] bg-pink-400 text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black rounded-3xl ml-7">
-    <button>Buy Now</button>
+   <div className="buttons fixed bottom-5 w-80 ml-4 md:w-[18vw] h-[4vh] bg-pink-400 text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black rounded-3xl ">
+    <button className='w-full items-center font-semibold pt-1'>Buy Now</button>
    </div>
    </div>
     <FaShoppingCart

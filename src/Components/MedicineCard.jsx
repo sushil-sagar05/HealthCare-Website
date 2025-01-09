@@ -12,13 +12,13 @@ function MedicineCard({id,name,img,price}) {
         <div className="name h-[5vh] w-full md:w-[20vw] font-bold mr-40 mt-3"> {name}</div>
         <div className="content flex justify-evenly gap-24">
           <div className="price">₹{price}</div>
-          <div className="button">
+          <div className="button w-36">
             <button 
              onClick={()=> {
               dispatch(addToCart({id,name,price, img, qty : 1}))
               
              }}
-            className='h-[4vh] w-[8vw] rounded-3xl bg-pink-400 text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black'>Add To Cart</button>
+            className='h-[4vh] w-full rounded-3xl bg-pink-400 text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black'>Add To Cart</button>
           </div>
         </div>
       </div>

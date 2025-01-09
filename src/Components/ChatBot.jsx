@@ -16,11 +16,14 @@ function ChatBot() {
    className='font-extrabold text-3xl cursor-pointer ml-2'
    />
    </div>
-   <div className="contentCard h-[40vh] bg-[#f8f7f5]">
+   <div className="contentCard h-96 bg-[#f8f7f5]">
         <div className="questions flex gap-3 pt-5">
             <div className='ml-3'><FaUserDoctor /> </div>
             <div>Ask Your Questions...</div>
             
+        </div>
+        <div className='w-1/2 h-1/2 font-extrabold text-4xl pt-5'>
+           <div className='w-full h-full'>UnderConstruction</div> 
         </div>
         <div className="Answers fixed right-7 mt-5">
             <div>Answers....</div>
@@ -31,7 +34,8 @@ function ChatBot() {
     placeholder='Enter Your Query..'
     name="" id="" />
    </div>
-   <div className="button fixed bottom-8 right-9"><button className='bg-pink-400 h-[4vh] w-[6vw] cursor-pointer text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black rounded-3xl'>Ask</button></div></div>
+   <div className="button fixed bottom-8 right-9 w-16">
+    <button className='bg-pink-400 h-[4vh] w-full cursor-pointer text-white hover:bg-white hover:text-black hover:border hover:border-solid hover:border-black rounded-3xl'>Ask</button></div></div>
    </div>
    
   </div>

@@ -4,19 +4,19 @@ import {Link,NavLink} from 'react-router-dom'
 function Header() {
   return (
     <>
-    <header className='h-[10vh]'>
-        <nav className='w-full fixed z-50 p-0 bg-white flex justify-between h-[10vh]'>
-        <div className="leftNav h-[25vh] w-[15vw]">
-          <div className="image h-[12vh] w-[12vw]">
+    <header className='h-[10vh]  '>
+        <nav className='w-full fixed z-50 p-0 bg-white flex md:justify-between  h-[10vh]'>
+        <div className="leftNav h-32  md:h-[15vh] md:w-[15vw] w-1/3 ">
+          <div className="image  h-full  object-cover  ">
            <Link to="/"> <img 
-            className="image h-[25vh] w-[12vw] pl-3 pb-20"
+            className="image  h-1/2 w-full  pl-3 mt-1"
             src="./images/logo.png" alt="" />
             </Link>
           </div>
         </div>
-        <div className="rightNav w-full md:w-[35vw] cursor-pointer">
-           <div className='items'> 
-           <ul className='flex flex-col md:flex-row justify-evenly font-bold my-5'>
+        <div className="rightNav w-full  md:w-[35vw] cursor-pointer">
+           <div className='items '> 
+           <ul className='flex  md:flex-row justify-evenly font-bold my-5'>
            <li>
                 <NavLink
                   to="/BloodBank"

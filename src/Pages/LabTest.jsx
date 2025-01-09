@@ -57,14 +57,14 @@ function LabTest() {
         <div className="tests h-[55vh] w-full md:w-[85vw] ml-8 md:ml-32">
           <h2 className='mb-5'>Your Report</h2>
           <hr />
-          <div className="testsCard mt-5 bg-[#f8f7f5] rounded-md h-[37vh] w-full md:w-[20vw] hover:border hover:border-solid hover:border-black ml-5">
-            <div className="card">
+          <div className="testsCard mt-5 bg-[#f8f7f5] rounded-md h-[37vh] w-3/4 items-center md:w-[20vw] hover:border hover:border-solid hover:border-black ml-5">
+            <div className="card  ">
               <div className="img h-[20vh] w-full md:w-[15vw]">
                 <img className='h-[20vh] rounded-md w-full md:w-[15vw]' src="https://render.fineartamerica.com/images/rendered/small/print/images-square-real/6-secondary-brain-cancers-ct-scan-du-cane-medical-imaging-ltd.jpg" alt="" />
               </div>
               <div className="content">
                 <div className="name">
-                  <h2 className='text-xl font-bold text-left'>C.T. Scan</h2>
+                  <h2 className='text-xl font-bold text-left '>C.T. Scan</h2>
                 </div>
                 <div className="desc text-left">
                   <button
