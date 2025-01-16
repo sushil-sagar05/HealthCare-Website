@@ -29,7 +29,7 @@ function AboutUs() {
         </Slider>
       </div>
       <div className="About h-[10vh] w-full md:w-[100vw] mx-auto">
-        <h2 className='font-extrabold text-3xl pt-3 text-center'>About Us</h2>
+        <h2 className='font-extrabold text-3xl pt-5 text-center'>About Us</h2>
       </div>
       <div className='mx-4 '><hr /></div>
       <div className="content h-[55vh] w-full md:w-[95vw] mx-auto">

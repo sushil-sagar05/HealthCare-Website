@@ -8,8 +8,8 @@ import ChatBot from './ChatBot'
 function Hero() {
   return (
     <>
-    <div className="hero h-auto md:h-[100vh]">
-    <div className="BottomNav h-[12vh] w-full  md:w-[100vw] md:flex  gap-10  ">
+    <div className="hero h-auto md:h-[100vh] ">
+    <div className="BottomNav h-[12vh] w-full  md:w-[100vw] md:flex  pt-5 gap-10  ">
     <div className='w-full mb-2'>
     <h2 className='text-md md:text-4xl font-bold text-black text-center'>Why to wait and stand in long line. Book your Opd tickets from here!!</h2>
       </div> 
@@ -20,19 +20,19 @@ function Hero() {
      
     </div>
     
-    <div className="Outer h-auto md:h-[90vh] md:w-[100vw] w-full">
-      <div className="image h-[45vh] w-full">
+    <div className="Outer h-auto md:h-[90vh] md:w-[100vw]  mt-10 w-full">
+      <div className="image h-[45vh] w-full border-2 rounded-lg shadow-md">
         <img className='h-[45vh] w-full' src="./images/2.png" alt="" />
       </div>
       <ChatBot/>
-      <div className="lower h-auto md:h-[78vh] bg-white w-full">
-        <h2 className='h-[15vh] w-full text-3xl pt-9 font-extrabold text-center md:text-start'>OUR FACILITY</h2>
+      <div className="lower h-auto md:h-[78vh]   w-full">
+        <h2 className='h-[15vh] w-full text-3xl pt-9 font-extrabold text-center text-black md:text-start'>OUR FACILITY</h2>
        <div >
        <SliderFacilities/>
        </div>
         </div>  
      
-       <div className="AboutUs h-auto md:h-[55vh] w-full md:w-[90vw] mx-auto bg-white shadow-md border flex flex-col md:flex-row justify-evenly pt-16">
+       <div className="AboutUs h-auto md:h-[55vh] w-full md:w-[90vw] mx-auto text-black  shadow-md border flex flex-col md:flex-row justify-evenly pt-16">
         <h2 className='h-[15vh] text-3xl pt-12 font-extrabold text-center md:text-start'>ABOUT US</h2>
             <div className='h-auto md:h-[30vh] w-full md:w-[65vw] pl-5'>
             <p className='text-left'>Welcome to CareSync, where we are committed to revolutionizing healthcare through an integrated platform that brings all hospital services together. Our mission is to enhance patient care and streamline operations for healthcare providers, ensuring a seamless experience from registration to treatment. With innovative solutions in electronic medical records, scheduling, billing, and telemedicine, we prioritize efficiency and compassion in every interaction. Join us as we pave the way toward a more connected and patient-centric healthcare system</p>
@@ -43,14 +43,14 @@ function Hero() {
             </div>
             </div>
            
-            <div className="contactUs h-auto md:h-[55vh] bg-white flex justify-center items-center">
-                <div className="inner h-auto md:h-[50vh] w-full md:w-[50vw] flex flex-col md:flex-row justify-evenly rounded-xl shadow-md bg-[#f8f7f5]">
-                <div className="left h-auto md:h-[50vh] w-full md:w-[25vw]">
+            <div className="contactUs h-auto md:h-[55vh]  flex justify-center items-center">
+                <div className="inner h-auto md:h-[50vh] w-full md:w-[50vw] flex flex-col md:flex-row justify-evenly rounded-xl shadow-md ">
+                <div className="left  h-auto md:h-[50vh] w-full md:w-[25vw]">
                   <img className='h-auto md:h-[50vh] w-full md:w-[25vw]'
                   src="https://unblast.com/wp-content/uploads/2020/09/Contact-Us-Vector-Illustration-Part-02-1.jpg" alt="" />
                 </div>
-                <div className="right h-auto md:h-[50vh] w-full md:w-[25vw] bg-[#f8f7f5] rounded-xl">
-                    <h2 className='font-extrabold mt-5 text-2xl text-center md:text-start text-black'>Get In Touch </h2>
+                <div className="right h-auto md:h-[50vh] w-full md:w-[25vw]  rounded-xl">
+                    <h2 className='font-extrabold mt-5 text-2xl text-center md:text-start text-white'>Get In Touch </h2>
                     <div className="inputs h-auto md:h-[40vh] pt-4">
                         <input
                         className='rounded-3xl p-2 h-[5vh] border border-solid border-orange-400 bg-[#f8f7f5] w-full md:w-[18vw]'

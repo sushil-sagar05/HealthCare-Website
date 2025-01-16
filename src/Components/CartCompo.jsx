@@ -6,7 +6,7 @@ import {useSelector,useDispatch} from 'react-redux'
 
 function CartCompo() {
   const dispatch = useDispatch()
-    const [activeCart, setActiveCart] = useState('false')
+    const [activeCart, setActiveCart] = useState('')
     const cartItems = useSelector((state) => state.cart.cart)
     const totalQty = cartItems.reduce((totalQty,item) => totalQty + item.qty,0)
     const totalPrice = cartItems.reduce((totalPrice,item) => totalPrice+ item.qty * item.price, 0)
@@ -36,7 +36,7 @@ function CartCompo() {
    </div>
    </div>
     <FaShoppingCart
-    className='fixed bottom-8 text-3xl cursor-pointer right-8'
+    className='fixed bottom-8  rounded-full  text-5xl cursor-pointer right-8'
     onClick={()=> setActiveCart(!activeCart)}
     />
    </>

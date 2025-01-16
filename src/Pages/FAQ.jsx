@@ -7,22 +7,22 @@ function FAQ() {
     <>
       <Header/>
       <div className="container w-full h-full px-4 md:px-0">
-        <div className="heading">
-          <h2 className='font-extrabold text-2xl md:text-4xl'>FREQUENTLY ASKED QUESTIONS</h2>
+        <div className="heading flex justify-center items-center">
+          <h2 className='font-extrabold  text-center text-2xl md:text-4xl w-1/2 border-black bg-red-500 border-2 rounded-lg'>FREQUENTLY ASKED QUESTIONS</h2>
         </div>
         {
           data.map((e) => (
-            <div className="faq-Container h-[18vh] w-full md:w-[85vw] bg-white ml-4 md:ml-12 mt-5">
+            <div className="faq-Container h-[18vh] w-full md:w-[85vw] bg-white ml-1 md:ml-12 mt-5">
               <div className="faqCard bg-[#f8f7f5] border border-solid border-pink-400 hover:border hover:border-solid hover:border-black rounded-md h-[18vh] w-full md:w-[85vw]">
-                <div className="questions h-[8vh] w-full md:w-[85vw] border-solid border-black">
+                <div className="questions h-[10vh] w-full md:w-[85vw] border-solid border-black">
                   <p className='text-left ml-5 pt-4 font-semibold'>{e.questions}</p>
                 </div>
                 <div className="hr font-extrabold text-black">
                   <hr />
                 </div>
                 <div className="Answer">
-                  <div className="questions h-[10vh] w-full md:w-[85vw]">
-                    <p className='text-left ml-5 pt-4 font-semibold text-black'>{e.Answer}</p>
+                  <div className="questions h-[13vh] w-full md:w-[85vw]">
+                    <p className='text-left ml-5 pt-1 font-semibold text-black'>{e.Answer}</p>
                   </div>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const data =[
   },
   {
     questions : "How to see lab report.",
-    Answer: "Click on the logo to land on home page.Click the lab test you will get current and previous lab report."
+    Answer: "Click the lab test you will get current and previous lab report."
   },
   {
     questions : "How to check medicine availablity?",

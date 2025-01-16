@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from './Header'
 
 function PatientRegistration() {
   return (
     <>
+    <Header/>
    <h2 className='font-extrabold text-2xl mt-3 mb-4 text-center md:text-left'>Registration Form</h2>
     <div className="registration flex flex-col md:flex-row justify-evenly">
         

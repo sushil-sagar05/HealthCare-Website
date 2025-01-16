@@ -1,12 +1,12 @@
 import React from 'react'
 import {Link,NavLink} from 'react-router-dom'
-
+import Hamburger from './Hamburger'
 function Header() {
   return (
     <>
     <header className='h-[10vh]  '>
-        <nav className='w-full fixed z-50 p-0 bg-white flex md:justify-between  h-[10vh]'>
-        <div className="leftNav h-36  md:h-[15vh] md:w-[15vw] w-1/6 ">
+        <nav className='w-full  shadow-md fixed z-50 p-0 bg-[#f8f7f5] flex md:justify-between  h-[10vh]'>
+        <div className="leftNav  h-28  md:h-[15vh] md:w-[15vw] w-1/2 ">
           <div className="image  h-full  object-cover  ">
            <Link to="/"> <img 
             className="image  h-1/2 w-full  pl-3 "
@@ -14,7 +14,7 @@ function Header() {
             </Link>
           </div>
         </div>
-        <div className="rightNav w-full  md:w-[35vw] cursor-pointer">
+        <div className="rightNav hidden lg:flex flex-col  w-full  md:w-[35vw] cursor-pointer">
            <div className='items '> 
            <ul className='flex  md:flex-row justify-evenly font-bold my-5'>
            <li>
@@ -46,6 +46,10 @@ function Header() {
             </ul>
             </div>
         </div>
+        <div className='h-36 text-2xl w-1/2 right-0 absolute pt-5 lg:hidden'>
+        <Hamburger />
+        </div>
+        
         </nav>
         
         </header>
